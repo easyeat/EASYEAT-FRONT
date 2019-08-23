@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# EASYEAT FRONT
 
-In the project directory, you can run:
+EASYEAT es una aplicacion para restaurantes basada en preorden, y en el momento de la compra de una manera dinamica y activa para cliente y vendedor
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Link de el proyecto EC2 EN AWS <Aqui va link del FRONT DESPLEGADO EN EC2>
+### Prerequisitos
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Para correr el front del proyecto necesitaremos lo siguiente
 
-### `npm test`
+```
+1) npm 
+2) JavaScript
+3) Maquina virtual de AWS en EC2
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing
 
-### `npm run build`
+Pasos para correr el programa
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para correr el front se deberan seguir los siguientes pasos:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+1) Verificar que la instancia en AWS EC2 este corriendo 
+2) Generar la llave pem que proporciona EC2 para la conexion remota en el servidor dado por AWS para ello copie cerca la llave el path de su proyecto.
+3) Luego de ello subira el proyecto.
+4) Por medio del protocolo sftp pase el archivo directamente desde su maquina a el server de AWS de la siguiente manera.
+```
+> sftp -i "elChurruscoDeShopFiles.pem" ec2-user@ec2-18-222-218-46.us-east-2.compute.amazonaws.com
+```
+5) Luego de ello agregar el archivo generado por el npm al programa de la siguiente forma
+```
+> put nombre_de_la_carpeta
+```
+6) Por ultimo conectese al servidor de EC2 de la siguiente manera
+```
+> ssh -i "elChurruscoDeShopFiles.pem" ec2-user@ec2-18-222-218-46.us-east-2.compute.amazonaws.com
+```
+7) Como ultimo paso correr el servicio para correrlo aplicaremos el siguiete comando
+```
+> sudo npm start (Para usar este comando debe estar dentro de la carpeta)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para el despliegue del sistema front como se explico anteriormente aplicar el siguiente comando:
+> sudo npm start
+> Para matar los procesos si se queda colgado hacer lo siguiente
+ * ps -ef | grep npm -> Esto le muestra los procesos corriendo para npm
+ * sudo kill "# del proceso" -> Con esto mata el proceso, con el numero asociado
+ 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Built With
 
-## Learn More
+* [npm](https://www.npmjs.com/) - Administrador de dependencias de Node
+* [AWS](https://aws.amazon.com/) - Plataforma de Arquitectura y Despliegue
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Por favor leer [Contribuidores](https://github.com/easyeat/EASYEAT-FRONT/graphs/contributors) para detalle de commits.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* **Andres Florez** - *Develop* - (https://github.com/andresflorezp)
+* **Nicolas Nontoa** - *Develop* - (https://github.com/nontoa)
+* **Sebastian Goenaga** - *Develop* - (https://github.com/SebastianGoenaga)
+* **Javier Vargas** - *Develop* - (https://github.com/javargas1098)
+* **Fabian Bohorquez** - *Develop* - (https://github.com/heredikon)
+* **Cesar Lanos** - *Develop* - ()
 
-### Making a Progressive Web App
+ Ver la lista de contribuidores de este proyecto [Contribuidores](https://github.com/easyeat/EASYEAT-FRONT/graphs/contributors) 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/https://github.com/easyeat/EASYEAT-FRONT/blob/master/LICENSE) file for details
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
