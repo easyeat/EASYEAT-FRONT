@@ -1,0 +1,29 @@
+.card {
+    display: 'flex',
+}
+
+.details {
+    display: 'flex';
+    /*flex-: 'column',*/
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.cover {
+    width: 151px,
+}
+
+.controls{
+    display: 'flex';
+    align-Items: 'center'; 
+    padding-left: 1px; 
+    padding-bottom: 1px;
+}
+
+.playIcon{
+    height: 38;
+    width: 38;
+}
+
