@@ -10,9 +10,9 @@ import Grid from '@material-ui/core/Grid';
 //import Box from '@material-ui/core/Box';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
 
+import Container from '@material-ui/core/Container';
+import "../css/style_registry.css"
 class Registroo extends React.Component {
 
     render() {
@@ -20,14 +20,14 @@ class Registroo extends React.Component {
         return (
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
-                <div>
+                <div className="paper">
                     <Avatar>
                         <LockOutlinedIcon />
                     </Avatar>
                     <Typography component="h1" variant="h5">
                         Sign up
         </Typography>
-                    <form noValidate>
+                    <form className="form" noValidate>
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={6}>
                                 <TextField
@@ -87,7 +87,8 @@ class Registroo extends React.Component {
                             fullWidth
                             variant="contained"
                             color="primary"
-                            
+                            className="submit"
+
                         >
                             Sign Up
           </Button>
