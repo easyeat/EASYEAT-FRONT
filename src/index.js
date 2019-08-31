@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Registro from './component/Registroo';
 
-
-
-
-ReactDOM.render(<h1>Hola</h1>, document.getElementById('root'));
+ReactDOM.render(<Registro/>, document.getElementById('root'));
 
