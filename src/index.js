@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Registro from './component/Registroo';
+import Login from './component/login';
 
-ReactDOM.render(<Registro/>, document.getElementById('root'));
+ReactDOM.render(<Login/>, document.getElementById('root'));
 
