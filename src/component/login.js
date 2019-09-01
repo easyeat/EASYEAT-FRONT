@@ -12,76 +12,78 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-import logo from "../images/logo.jpg"
-import "../css/style_registry.css"
+import logo from '../images/logo.jpg'
+import '../css/style_registry.css'
+
+class login extends React.Component {
 
 
-class login extends React.Component{
-    render(){
-        return(
-            <Container component='main' maxWidth='xs'>
+  render () {
+    return (
+      <Container component='main' maxWidth='xs'>
         <CssBaseline />
-        <div className="paper">
-            <center>
+        <div className='paper'>
+          <center>
             <img className='image' src={logo} alt='Icon Easy Eat' />
             <Typography component='h1' variant='h5'>
-                Sign in
+              Sign in
             </Typography>
-            </center>
-            <form className="form" noValidate>
+          </center>
+          <form className='form' noValidate>
             <TextField
-                variant='outlined'
-                margin='normal'
-                required
-                fullWidth
-                id='email'
-                label='Email Address'
-                name='email'
-                autoComplete='email'
-                autoFocus />
+              variant='outlined'
+              margin='normal'
+              required
+              fullWidth
+              id='email'
+              label='Email Address'
+              name='email'
+              autoComplete='email'
+              autoFocus />
             <TextField
-                variant='outlined'
-                margin='normal'
-                required
-                fullWidth
-                name='password'
-                label='Password'
-                type='password'
-                id='password'
-                autoComplete='current-password' />
+              variant='outlined'
+              margin='normal'
+              required
+              fullWidth
+              name='password'
+              label='Password'
+              type='password'
+              id='password'
+              autoComplete='current-password' />
             <FormControlLabel control={<Checkbox value="remember" color="primary" />} label='Remember me' />
             <br></br>
             <Button
-                type='submit'
-                fullWidth
-                variant='contained'
-                color='primary'
-                className="submit">
-                Sign In
+                style={{
+                 backgroundColor: '#6200EE'
+                }}
+              type='submit'
+              fullWidth
+              variant='contained'
+              color='primary'
+              className='submit'>
+              Sign In
             </Button>
-            <br></br>          
-            <br></br>    
+            <br></br>
+            <br></br>
             <Grid container>
-                <Grid item xs>
+              <Grid item xs>
                 <Link href='#' variant='body2'> Forgot password?
                 </Link>
-                </Grid>
-                <Grid item>
+              </Grid>
+              <Grid item>
                 <Link href='#' variant='body2'>
                 {"Don't have an account? Sign Up"}
                 </Link>
-                </Grid>
+              </Grid>
             </Grid>
-            </form>
+          </form>
         </div>
         <Box mt={8}>
-            
         </Box>
-        </Container>
-        )
-    }
+      </Container>
+    )
+  }
 
 }
 
-export default login; 
-
+export default login
