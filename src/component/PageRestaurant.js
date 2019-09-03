@@ -28,6 +28,7 @@ class PageRestaurant extends React.Component {
                     </center>*/}
                     <NavBar/>
                     <br/>
+                    <br/><br/>
                     <CRestaurante />
                     <br />
                     <CRestaurante />

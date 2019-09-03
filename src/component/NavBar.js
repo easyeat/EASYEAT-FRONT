@@ -17,7 +17,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div style={{ flexGrow: "1", }}>
-                <AppBar position="static" style={{ backgroundColor: "#001f3f" }}>
+                <AppBar position="fixed" style={{ backgroundColor: "#001f3f" }}>
                     <Toolbar>
                         <IconButton edge="start" style={{ marginRight: "20" }} color="inherit" aria-label="menu">
                             <MenuIcon />
