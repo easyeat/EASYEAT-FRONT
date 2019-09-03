@@ -12,7 +12,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import "../css/style_registry.css"
-import logo from "../images/logo.jpg"
+import logo from "../images/EasyEat.png"
 class Registroo extends React.Component {
 
     render() {

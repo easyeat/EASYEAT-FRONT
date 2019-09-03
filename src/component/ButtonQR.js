@@ -8,9 +8,9 @@ export default class QR extends React.Component {
     render() {
 
         return (
-            <Fab color="primary" aria-label="add" style={{ margin: "10px",position: "fixed",
+            <Fab  aria-label="add" style={{ margin: "10px",position: "fixed",
                         bottom: "0",
-                        right: "0" }}>
+                        right: "0",backgroundColor:"#0074D9",color:"#fff" }}>
             <Typography  >
                 QR
             </Typography>

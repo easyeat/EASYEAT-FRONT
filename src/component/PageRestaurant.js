@@ -11,6 +11,8 @@ import logo from "../images/logo.jpg"
 import "../css/style_registry.css"
 import CRestaurante from "../component/DataRestaurant"
 import ButtonQR from "../component/ButtonQR"
+import NavBar from "../component/NavBar"
+
 
 class PageRestaurant extends React.Component {
     render() {
@@ -18,12 +20,14 @@ class PageRestaurant extends React.Component {
             <Container component='main' maxWidth='xs'>
                 <CssBaseline />
                 <div className="paper">
-                    <center>
+                    {/*<center>
                         <img className='image' src={logo} alt='Icon Easy Eat' />
                         <Typography component='h1' variant='h5'>
                             Restaurantes
             </Typography>
-                    </center>
+                    </center>*/}
+                    <NavBar/>
+                    <br/>
                     <CRestaurante />
                     <br />
                     <CRestaurante />
