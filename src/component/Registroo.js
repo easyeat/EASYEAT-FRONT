@@ -5,7 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 //import FormControlLabel from '@material-ui/core/FormControlLabel';
 //import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
+//import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 //import Box from '@material-ui/core/Box';
 //import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import "../css/style_registry.css"
 import logo from "../images/EasyEat.png"
+import {Link}  from 'react-router-dom'
 class Registroo extends React.Component {
 
     render() {
@@ -91,6 +92,7 @@ class Registroo extends React.Component {
                             </Grid>*/}
                         </Grid>
                         <br/><br/>
+                        <Link  to="/login" style={{textDecoration:"none"}}>
                         <Button
                             type="submit"
                             fullWidth
@@ -101,9 +103,11 @@ class Registroo extends React.Component {
                         >
                             Sign Up
           </Button>
+          </Link>
                         <Grid container justify="flex-end">
                             <Grid item>
-                                <Link href="#" variant="body2">
+                                
+                                <Link to="/login" variant="body2">
                                     Already have an account? Sign in
               </Link>
                             </Grid>
