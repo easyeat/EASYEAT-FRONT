@@ -19,10 +19,10 @@ class DataRestaurant extends React.Component {
                 <div className="details">
                     <CardContent className="content">
                         <Typography component="h5" variant="h5">
-                            Live From Space 
+                            Plato
                         </Typography>
                         <Typography variant="subtitle1" color="textSecondary">
-                            Mac Miller
+                            Descipcion Plato
                         </Typography>
                         <Star style={{color:"#FFDC00"}}/>
                     </CardContent>
