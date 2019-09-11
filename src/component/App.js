@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Registro from './Registroo'
 import Login from './login'
 import PagePlatos from './PageRestaurant'
+import Home from './home'
 class App extends React.Component {
 
     render() {
-
         return (
             <Router>
                 <div className="App">
@@ -15,6 +15,7 @@ class App extends React.Component {
                         <Switch>
                             <Route exact path="/" component={Registro} />
                             <Route path="/login" component={Login}/>
+                            <Route path="/home" component={Home}/>
                             <Route path="/platos" component={PagePlatos}/>
                         </Switch>
                     </div>

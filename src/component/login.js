@@ -52,7 +52,7 @@ class login extends React.Component {
               autoComplete='current-password' />
             <FormControlLabel control={<Checkbox value="remember" color="primary" />} label='Remember me' />
             <br></br>
-            <Link to="/platos" style={{textDecoration:"none"}}>
+            <Link to="/home" style={{textDecoration:"none"}}>
               <Button
                   style={{
                   backgroundColor: '#6200EE'
